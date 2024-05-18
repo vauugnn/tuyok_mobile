@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tuyok_mobile/landing_page.dart';
 import 'package:tuyok_mobile/sign_in_page.dart';
+import 'package:tuyok_mobile/map_page.dart';
 
 class SignUpPage extends StatelessWidget {
   @override
@@ -87,7 +88,7 @@ class SignUpPage extends StatelessWidget {
                       // TODO: Implement sign up functionality
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context) => SignInPage()),
+                        MaterialPageRoute(builder: (context) => MapPage()),
                       );
                     },
                     style: ButtonStyle(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tuyok_mobile/landing_page.dart';
 import 'package:tuyok_mobile/sign_up_page.dart';
+import 'package:tuyok_mobile/map_page.dart';
 
 class SignInPage extends StatelessWidget {
   @override
@@ -90,20 +91,20 @@ class SignInPage extends StatelessWidget {
                     ),
                     child: Text(
                       'Sign In',
-                      style: TextStyle(fontSize: 18.0),
+                      style: const TextStyle(fontSize: 18.0),
                     ),
                   ),
                 ),
-                SizedBox(height: 16.0),
+                const SizedBox(height: 16.0),
                 Center(
                   child: GestureDetector(
                     onTap: () {
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context) => SignUpPage()),
+                        MaterialPageRoute(builder: (context) => MapPage()),
                       );
                     },
-                    child: Text(
+                    child: const Text(
                       'Create Account',
                       style: TextStyle(
                         color: Colors.orange,
